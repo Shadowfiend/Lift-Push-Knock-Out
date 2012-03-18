@@ -1,0 +1,36 @@
+html, body {
+  height: 100%;
+}
+
+#main {
+  padding-top: 40px;
+}
+
+/* Chat display. */
+#chat-contents {
+  list-style-type: none;
+
+  margin: 0;
+  padding: 0;
+}
+
+/* Chat fields and form. */
+form.chat {
+  position: fixed;
+
+  bottom: 0;
+  left: 20px;
+  right: 20px;
+
+  width: auto;
+}
+
+#chat-message {
+  height: auto;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}

@@ -6,8 +6,24 @@
   </head>
 
   <body class="lift:content_id=main">
-    <div id="main" class="lift:surround?with=default;at=content">
-      <h2>Chat time!</h2>
+    <div id="main" class="lift:surround?with=default;at=content container-fluid">
+      <h2 class="row-fluid">Chat time!</h2>
+
+      <ol id="chat-contents" class="row-fluid">
+        <li class="row-fluid">
+          <p class="poster span1"><a href="/users/superman">Superman</a>:</p>
+
+          <p class="body span11">This is a sample chat message!</p>
+        </li>
+      </ol>
+
+      <form class="chat form-horizontal row-fluid">
+        <input id="chat-message" type="text" placeholder="Type your message…" class="span11" />
+
+        <button class="btn span1" type="submit">
+          Post
+        </button>
+      </form>
     </div>
   </body>
 </html>
