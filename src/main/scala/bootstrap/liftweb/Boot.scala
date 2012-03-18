@@ -19,6 +19,8 @@ class Boot {
     // where to search for snippets
     LiftRules.addToPackages("com.withoutincident")
 
+    LiftRules.htmlProperties.default.set { r:Req => new XHtmlInHtml5OutProperties(r.userAgent) }
+
     // Build SiteMap
     val entries = List(
       Menu.i("Home") / "index" // the simple way to declare a menu
