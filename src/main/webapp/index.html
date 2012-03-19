@@ -19,7 +19,9 @@
         </li>
       </ol>
 
-      <form class="chat form-horizontal row-fluid">
+      <form class="chat form-horizontal row-fluid"
+            action="javascript://" method="post"
+            data-bind="attr: { 'data-form-id': }">
         <input id="chat-message" type="text" placeholder="Type your message…" class="span11" />
 
         <button class="btn span1" type="submit">
